@@ -1,0 +1,50 @@
+
+
+<h2 mat-dialog-title>Add An Assignment</h2>
+<mat-dialog-content class="mat-typography">
+  <mat-form-field>
+        <mat-label>assignment name</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Select a class</mat-label>
+        <mat-select>
+          <mat-option value="gov">government</mat-option>
+          <mat-option value="study_hall">study hall</mat-option>
+          <mat-option value="eng">english</mat-option>
+          <mat-option value="math">math</mat-option>
+          <mat-option value="food">culinary</mat-option>
+          <mat-option value="finance">finance</mat-option>
+          <mat-option value="science">science</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Select assignment type</mat-label>
+        <mat-select>
+          <mat-option value="quizlet">quizlet</mat-option>
+          <mat-option value="quiz">quiz</mat-option>
+          <mat-option value="test">test</mat-option>
+          <mat-option value="worksheet">worksheet</mat-option>
+          <mat-option value="notes">notes</mat-option>
+          <mat-option value="vocab">vocab</mat-option>
+          <mat-option value="project">project</mat-option>
+          <mat-option value="edulastic">edulastic</mat-option>
+    
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>assignment url</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+</mat-dialog-actions>
