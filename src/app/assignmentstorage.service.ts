@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-
+import { Assignment } from './assignment';
 @Injectable({
   providedIn: 'root'
 })
-export class AssignmentStorageService {
+export class AssignmentstorageService {
   private assignments: Assignment[] = [];
 
   constructor() {

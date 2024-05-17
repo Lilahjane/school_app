@@ -1,5 +1,35 @@
 <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
-    <mat-tab label="overview"><app-overview></app-overview></mat-tab>
+    <mat-tab label="overview"><div class="parent">
+        <div class="div1">
+          <mat-card>
+            <mat-card-content>Clock</mat-card-content>
+          </mat-card>
+         
+        </div>
+        <div class="div2"><!--sorter for assignments-->
+       
+          </div>
+    
+          <div class="div3">
+            <button mat-flat-button (click)="openAssignmentForm()">Assignment</button>
+          </div>
+          
+        <div class="div4"><!--URGENT SHIT --> 
+          <mat-card>
+            <mat-card-content>view all assignments</mat-card-content>
+          </mat-card>
+          </div>
+        <div class="div5"><!--me trying to make the hard things less hard-->
+          <mat-card>
+            <mat-card-content>progress</mat-card-content>
+          </mat-card>
+           </div>
+        <div class="div6">
+          <mat-card>
+            <mat-card-content>what I need to do in the class that I am in rn </mat-card-content>
+          </mat-card>
+           </div>
+        </div></mat-tab>
     <mat-tab label="classes"><app-classes></app-classes></mat-tab>
     <mat-tab label="assignments"><app-assignments></app-assignments></mat-tab>
 </mat-tab-group>
